@@ -15,7 +15,7 @@ app.use (bodyParser.json())
 app.use ((req,res,next)=>{console.log('first log!');next(console.log('nexted!'))})
 
 app.get('/api/waffle',controller.waffle)
-app.get('/api/get/:query',controller.get)
+app.get('/api/get/',controller.query)
 app.post('/api/post',controller.post)
 app.put('/api/meow/:id',controller.put)
 app.delete('/api/dog/:id',controller.delete)

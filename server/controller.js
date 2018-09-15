@@ -2,8 +2,8 @@ module.exports={
 	waffle:(req,res,next) =>    
 	{console.log('incoming get...');res.status(200).send("stuff retrieved!")},
 	
-	get:(req,res,next) =>    
-	{console.log('incoming query...');res.status(200).send(`${req.params.query} retrieved!`)},
+	query:(req,res,next) =>    
+	{console.log('incoming query...');res.status(200).send(`${req.query.turtle} retrieved!`)},
 	
 	post:(req,res,next) =>   
 	{console.log('incoming post...');res.status(200).send("stuff created!")},
